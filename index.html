@@ -124,7 +124,16 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               meeting new people.</p>
           </div>
           <div>
-            <iframe src="https://antsbot.herokuapp.com/" width="800" height="600"></iframe>
+            <div id="embedded_messenger">
+              <header id="message_header" onclick="Botkit.toggle()">Chat</header>
+              <iframe id="botkit_client" src="//{{https://antsbot.herokuapp.com/}}/chat.html"></iframe>
+            </div>
+            <script src="//{{https://antsbot.herokuapp.com/}}/embed.js"></script>
+            <script>
+              var options = {};
+              Botkit.boot(options);
+            </script>
+            <link rel="stylesheet" href="//{{https://antsbot.herokuapp.com/}}/embed.css" />
           </div>
         </div>
 
