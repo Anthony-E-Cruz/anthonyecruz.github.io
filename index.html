@@ -126,14 +126,13 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
           <div>
             <div id="embedded_messenger">
               <header id="message_header" onclick="Botkit.toggle()">Chat</header>
-              <iframe id="botkit_client" src="//{{https://antsbot.herokuapp.com/}}/chat.html"></iframe>
+              <!-- <iframe id="botkit_client" src="https://antsbot.herokuapp.com"></iframe> -->
             </div>
-            <script src="//{{https://antsbot.herokuapp.com/}}/embed.js"></script>
+            <script src="/embed.js"></script>
+            <link rel="stylesheet" href="/css/embed.css" />
             <script>
-              var options = {};
-              Botkit.boot(options);
+              Botkit.boot();
             </script>
-            <link rel="stylesheet" href="//{{https://antsbot.herokuapp.com/}}/embed.css" />
           </div>
         </div>
 
